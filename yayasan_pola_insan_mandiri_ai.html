@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yayasan Pola Insan Mandiri (YAPIM) Klaten - AI-Powered Empowerment</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#312e81',
+                        },
+                        secondary: {
+                            500: '#ec4899',
+                            600: '#db2777',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-40 glassmorphism shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <!-- Logo Brand Container with highly detailed Vector SVG -->
+                <div class="flex items-center space-x-3 py-1">
+                    <!-- Premium 100% Vector Inline SVG Logo -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 250" class="h-14 sm:h-16 w-auto drop-shadow-sm shrink-0" id="ypim-svg-logo-header">
+                        <defs>
+                            <linearGradient id="logoTop" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#fbbf24" />
+                                <stop offset="50%" stop-color="#f59e0b" />
+                                <stop offset="100%" stop-color="#ea580c" />
+                            </linearGradient>
+                            <linearGradient id="logoLeftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#a3e635" />
+                                <stop offset="100%" stop-color="#15803d" />
+                            </linearGradient>
+                            <linearGradient id="logoRightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#4ade80" />
+                                <stop offset="100%" stop-color="#166534" />
+                            </linearGradient>
+                            <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#15803d" />
+                                <stop offset="60%" stop-color="#22c55e" />
+                                <stop offset="85%" stop-color="#ea580c" />
+                                <stop offset="100%" stop-color="#eab308" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Top Orange & Yellow Rhombus Panel -->
+                        <path d="M 110 15 L 195 62 L 110 110 L 25 62 Z" fill="url(#logoTop)" />
+                        <!-- White inner space forming 'P' cut -->
+                        <path d="M 110 38 L 152 62 L 110 86 L 68 62 Z" fill="#ffffff" />
+                        <!-- Central red diamond badge -->
+                        <path d="M 110 47 L 126 57 L 110 67 L 94 57 Z" fill="#dc2626" />
+                        <!-- Left Isometric side layer (sliced block 1) -->
+                        <path d="M 25 74 L 105 119 L 105 158 L 25 113 Z" fill="url(#logoLeftGrad)" />
+                        <!-- Left Isometric side layer (sliced block 2) -->
+                        <path d="M 25 125 L 105 170 L 105 209 L 25 164 Z" fill="url(#logoLeftGrad)" />
+                        <!-- Right Isometric side layer (sliced block 1) -->
+                        <path d="M 115 119 L 195 74 L 195 113 L 115 158 Z" fill="url(#logoRightGrad)" />
+                        <!-- Right Isometric side layer (sliced block 2) -->
+                        <path d="M 115 170 L 195 125 L 195 164 L 115 209 Z" fill="url(#logoRightGrad)" />
+                        <!-- Pill-shaped container at bottom -->
+                        <rect x="10" y="215" width="200" height="30" rx="15" fill="url(#pillGrad)" />
+                        <!-- Precise center-aligned brand text -->
+                        <text x="110" y="235" fill="#ffffff" font-family="'Inter', sans-serif" font-weight="bold" font-size="12" text-anchor="middle" letter-spacing="0.4">Pola Insan Mandiri</text>
+                    </svg>
+                    
+                    <div>
+                        <span class="font-extrabold text-lg sm:text-xl tracking-tight text-brand-900 block leading-tight">YAPIM Klaten</span>
+                        <span class="text-[10px] text-brand-600 font-medium tracking-widest uppercase block -mt-1">Yayasan Pola Insan Mandiri</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#beranda" class="text-slate-600 hover:text-brand-600 font-semibold transition">Beranda</a>
+                    <a href="#program" class="text-slate-600 hover:text-brand-600 font-semibold transition">Program Kami</a>
+                    <a href="#ai-center" class="text-slate-600 hover:text-brand-600 font-semibold transition flex items-center space-x-1">
+                        <span class="bg-gradient-to-r from-brand-500 to-secondary-500 text-white text-[10px] px-1.5 py-0.5 rounded-full font-bold uppercase tracking-wider animate-pulse">AI</span>
+                        <span>Fitur Pintar</span>
+                    </a>
+                    <a href="#tentang" class="text-slate-600 hover:text-brand-600 font-semibold transition">Tentang Kami</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#donasi-section" class="px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-brand-900 font-bold transition flex items-center space-x-2">
+                        <i class="fa-solid fa-heart text-secondary-500"></i>
+                        <span>Donasi</span>
+                    </a>
+                    <a href="#ai-center" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-brand-700 hover:from-brand-700 hover:to-brand-800 text-white font-bold transition shadow-lg shadow-brand-500/25">
+                        Konsultasi AI
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-slate-100 transition focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl text-slate-700" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 bg-white shadow-lg transition duration-200">
+            <div class="px-4 pt-2 pb-6 space-y-3">
+                <a href="#beranda" class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 font-semibold">Beranda</a>
+                <a href="#program" class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 font-semibold">Program Kami</a>
+                <a href="#ai-center" class="block px-3 py-2 rounded-lg bg-indigo-50 text-brand-700 font-semibold flex items-center space-x-2">
+                    <span class="bg-secondary-500 text-white text-[9px] px-1.5 py-0.5 rounded font-bold uppercase">AI</span>
+                    <span>AI Center (Konsultasi)</span>
+                </a>
+                <a href="#tentang" class="block px-3 py-2 rounded-lg text-slate-700 hover:bg-slate-50 font-semibold">Tentang Kami</a>
+                <div class="pt-4 border-t border-slate-100 flex flex-col space-y-2">
+                    <a href="#donasi-section" class="w-full text-center px-4 py-2.5 rounded-lg bg-slate-100 text-slate-800 font-bold">Donasi Peduli</a>
+                    <a href="https://wa.me/628562557235" target="_blank" class="w-full text-center px-4 py-2.5 rounded-lg bg-emerald-600 text-white font-bold flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp Hubungi Kami</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative pt-10 pb-20 sm:py-24 overflow-hidden">
+        <!-- Floating abstract decorations -->
+        <div class="absolute top-1/4 left-10 w-72 h-72 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse" style="animation-delay: 2s;"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Content -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-brand-50 border border-brand-100 rounded-full px-4 py-1.5 text-brand-700 font-semibold text-xs sm:text-sm">
+                        <span class="flex h-2 w-2 rounded-full bg-secondary-500 animate-ping"></span>
+                        <span>YAPIM Klaten - Pemberdayaan Berbasis AI untuk Kemandirian Bangsa</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight">
+                        Membentuk Pola Pikir Unggul, Mewujudkan <span class="gradient-text">Insan Mandiri</span>
+                    </h1>
+                    
+                    <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Kami menjembatani potensi manusia dengan kemajuan teknologi. Melalui kurikulum berkarakter, bimbingan vokasi cerdas, dan asisten AI personal, kami membantu mewujudkan pribadi yang tangguh, berdikari, dan berdampak bagi masyarakat.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#ai-center" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-brand-600 to-brand-700 text-white font-bold shadow-xl shadow-brand-500/30 hover:shadow-brand-500/40 transition duration-150 flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <span>Mulai Analisis AI Diri</span>
+                        </a>
+                        <a href="#program" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white text-slate-700 border border-slate-200 font-bold hover:bg-slate-50 transition duration-150 flex items-center justify-center space-x-2">
+                            <span>Pelajari Program</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-200 max-w-md mx-auto lg:mx-0 text-left">
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-black text-brand-900">10k+</span>
+                            <span class="text-xs sm:text-sm text-slate-500">Insan Terbina</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-black text-brand-900">95%</span>
+                            <span class="text-xs sm:text-sm text-slate-500">Tingkat Kemandirian</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-black text-brand-900">24/7</span>
+                            <span class="text-xs sm:text-sm text-slate-500">Dukungan AI Mentor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image / AI Feature Card Teaser -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-[420px] rounded-3xl p-6 bg-gradient-to-br from-indigo-900 to-slate-900 text-white shadow-2xl overflow-hidden group">
+                        <!-- Neon decoration lines -->
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary-500 rounded-full opacity-20 filter blur-xl group-hover:opacity-30 transition"></div>
+                        <div class="absolute -bottom-20 -left-20 w-48 h-48 bg-brand-500 rounded-full opacity-20 filter blur-xl group-hover:opacity-30 transition"></div>
+                        
+                        <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-4">
+                            <div class="flex items-center space-x-2">
+                                <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                                <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+                                <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                            </div>
+                            <span class="text-xs font-mono text-indigo-200 tracking-wider bg-white/5 px-2 py-1 rounded">MANDIRI_AI_v2.5</span>
+                        </div>
+
+                        <!-- Inner Terminal Content -->
+                        <div class="space-y-4 text-sm font-mono leading-relaxed min-h-[220px]">
+                            <div class="flex items-start space-x-2">
+                                <span class="text-brand-400 font-bold">&gt;</span>
+                                <p class="text-indigo-100">Menginisialisasi modul kemandirian insan...</p>
+                            </div>
+                            <div class="flex items-start space-x-2">
+                                <span class="text-brand-400 font-bold">&gt;</span>
+                                <p class="text-indigo-100">Memetakan pola minat, kecakapan hidup, dan kompetensi...</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-indigo-200 space-y-2 mt-4">
+                                <div class="flex items-center justify-between text-xs">
+                                    <span>Skor Potensi Kemandirian:</span>
+                                    <span class="text-emerald-400 font-bold">Unggul (87%)</span>
+                                </div>
+                                <div class="w-full bg-white/10 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-gradient-to-r from-brand-500 to-secondary-500 h-full rounded-full w-[87%]"></div>
+                                </div>
+                                <p class="text-xs text-indigo-300 italic">"Rekomendasi program yang cocok: Inkubator Digital & Karakter Mulia."</p>
+                            </div>
+                        </div>
+
+                        <!-- Teaser Action trigger -->
+                        <a href="#ai-center" class="mt-6 w-full py-3 px-4 rounded-xl bg-gradient-to-r from-brand-500 to-secondary-500 hover:from-brand-600 hover:to-secondary-600 text-white font-bold flex items-center justify-center space-x-2 transition shadow-lg shadow-brand-500/20">
+                            <span>Konsultasi Sekarang</span>
+                            <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Programs Section -->
+    <section id="program" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-brand-600 font-bold text-sm tracking-wider uppercase">Pilar Pemberdayaan Kami</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Program Unggulan Yayasan Pola Insan Mandiri</h2>
+                <p class="text-slate-600">Kami percaya kemandirian sejati lahir dari integrasi antara keterampilan teknis modern, mentalitas yang kokoh, serta kecakapan mengelola hidup secara bijaksana.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Program 1: Character & Moral Foundation -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-2xl hover:shadow-indigo-500/5 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-indigo-100 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-heart-circle-check text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Pola Karakter Mulia</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm mb-6">
+                            Membangun integritas moral, kedisiplinan diri, rasa tanggung jawab sosial, serta kestabilan emosi melalui pelatihan kepribadian intensif dan spiritualitas yang inklusif.
+                        </p>
+                    </div>
+                    <ul class="space-y-2 border-t border-slate-200/60 pt-4 text-xs font-semibold text-slate-500">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-brand-500"></i>
+                            <span>Character Bootcamps & Mentoring</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-brand-500"></i>
+                            <span>Konseling & Pemulihan Trauma</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Program 2: Vocational & Tech Skills -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-2xl hover:shadow-indigo-500/5 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-pink-100 text-secondary-500 flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-laptop-code text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Vokasi & Inkubator Digital</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm mb-6">
+                            Membekali peserta didik dengan keterampilan praktis siap kerja seperti pemrograman, desain digital, pemasaran online, administrasi bisnis modern, dan kriya kreatif.
+                        </p>
+                    </div>
+                    <ul class="space-y-2 border-t border-slate-200/60 pt-4 text-xs font-semibold text-slate-500">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-secondary-500"></i>
+                            <span>Sertifikasi Profesional Terakreditasi</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-secondary-500"></i>
+                            <span>Saluran Penyaluran Kerja Langsung</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Program 3: Independent Entrepreneurship -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-2xl hover:shadow-indigo-500/5 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-briefcase text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Inkubasi Wirausaha Mandiri</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm mb-6">
+                            Mendorong lahirnya pengusaha baru yang mandiri secara ekonomi. Memberikan modal bergulir, pendampingan model bisnis, strategi perluasan pasar, dan bimbingan manajemen keuangan.
+                        </p>
+                    </div>
+                    <ul class="space-y-2 border-t border-slate-200/60 pt-4 text-xs font-semibold text-slate-500">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500"></i>
+                            <span>Mentoring Bisnis 1-on-1</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-emerald-500"></i>
+                            <span>Akses Dana & Kemitraan Strategis</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Interactive Workspace Section -->
+    <section id="ai-center" class="py-20 bg-gradient-to-b from-slate-50 to-indigo-50/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+                <span class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-xs font-bold uppercase tracking-wider">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <span>Sistem Pintar AI Pola Insan</span>
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Gunakan Kecerdasan Buatan Untuk Potensi Terbaik Anda</h2>
+                <p class="text-slate-600">Teknologi Gemini AI terintegrasi siap memetakan potensi kemandirian hidup, merancang peta jalan karier, dan memberikan bimbingan konsultasi 24 jam gratis.</p>
+            </div>
+
+            <!-- Workspace Tabs Container -->
+            <div class="bg-white rounded-3xl shadow-xl shadow-indigo-900/5 border border-slate-100 overflow-hidden">
+                <!-- Navigation Tabs -->
+                <div class="flex flex-wrap border-b border-slate-200 bg-slate-50/80">
+                    <button onclick="switchTab('tab-blueprint')" id="btn-tab-blueprint" class="flex-1 min-w-[200px] px-6 py-4 text-center font-bold text-sm tracking-wide transition border-b-2 border-brand-600 text-brand-600 flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <span>AI Cetak Biru Mandiri</span>
+                    </button>
+                    <button onclick="switchTab('tab-chat')" id="btn-tab-chat" class="flex-1 min-w-[200px] px-6 py-4 text-center font-bold text-sm tracking-wide transition border-b-2 border-transparent text-slate-500 hover:text-slate-800 flex items-center justify-center space-x-2">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>Asisten Pintar Yayasan AI</span>
+                    </button>
+                </div>
+
+                <!-- Tab Contents -->
+                <!-- Tab 1: AI Blueprint Generator -->
+                <div id="tab-blueprint" class="p-6 sm:p-10 space-y-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <!-- Blueprint Inputs -->
+                        <div class="lg:col-span-5 space-y-6 bg-slate-50 p-6 rounded-2xl border border-slate-200/60">
+                            <h3 class="text-lg font-bold text-slate-900 flex items-center space-x-2">
+                                <i class="fa-solid fa-sliders text-brand-500"></i>
+                                <span>Input Profil & Target Anda</span>
+                            </h3>
+
+                            <form id="blueprint-form" onsubmit="generateBlueprint(event)" class="space-y-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Nama Lengkap</label>
+                                    <input type="text" id="bp-nama" placeholder="Contoh: Budi Santoso" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 bg-white transition outline-none">
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Usia (Tahun)</label>
+                                        <input type="number" id="bp-usia" placeholder="Contoh: 19" required min="10" max="100" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 bg-white transition outline-none">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Status Saat Ini</label>
+                                        <select id="bp-status" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 bg-white transition outline-none">
+                                            <option value="Pelajar / Mahasiswa">Pelajar / Mahasiswa</option>
+                                            <option value="Belum Bekerja">Belum Bekerja</option>
+                                            <option value="Bekerja Serabutan">Bekerja Serabutan</option>
+                                            <option value="Pekerja Sektor Informal">Pekerja Sektor Informal</option>
+                                            <option value="Ingin Merintis Bisnis">Ingin Merintis Bisnis</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Minat & Bidang Tertarik</label>
+                                    <select id="bp-minat" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 bg-white transition outline-none">
+                                        <option value="Pemrograman, AI & Teknologi Digital">Pemrograman, AI & Teknologi Digital</option>
+                                        <option value="Desain Grafis & Industri Kreatif">Desain Grafis & Industri Kreatif</option>
+                                        <option value="Kewirausahaan & Kuliner Kreatif">Kewirausahaan & Kuliner Kreatif</option>
+                                        <option value="Pertanian Modern & Hidroponik">Pertanian Modern & Hidroponik</option>
+                                        <option value="Keterampilan Vokasi Otomotif / Elektro">Keterampilan Vokasi Otomotif / Elektro</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Tantangan Terbesar Saat Ini</label>
+                                    <textarea id="bp-tantangan" rows="3" placeholder="Sebutkan kendala Anda, misalnya: tidak punya laptop untuk belajar, kurang disiplin, kesulitan manajemen waktu, atau keterbatasan modal kerja..." required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 bg-white transition outline-none resize-none"></textarea>
+                                </div>
+
+                                <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-600 to-secondary-500 hover:from-brand-700 hover:to-secondary-600 text-white font-bold transition shadow-lg shadow-brand-500/20 flex items-center justify-center space-x-2">
+                                    <i class="fa-solid fa-sparkles"></i>
+                                    <span>Hasilkan Cetak Biru Sekarang</span>
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Blueprint Outputs Screen -->
+                        <div class="lg:col-span-7 flex flex-col h-full min-h-[400px] border border-slate-200/80 rounded-2xl overflow-hidden shadow-inner bg-slate-50 relative">
+                            <div class="bg-white border-b border-slate-200/80 px-6 py-4 flex items-center justify-between">
+                                <div class="flex items-center space-x-2">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                                    <span class="text-xs font-bold text-slate-600 uppercase tracking-widest">Hasil Analisis AI</span>
+                                </div>
+                                <button onclick="copyBlueprintText()" class="text-xs font-semibold text-slate-500 hover:text-brand-600 flex items-center space-x-1.5 transition">
+                                    <i class="fa-regular fa-copy"></i>
+                                    <span>Salin Hasil</span>
+                                </button>
+                            </div>
+
+                            <div class="flex-1 p-6 overflow-y-auto max-h-[480px] bg-slate-50 text-slate-700" id="blueprint-result">
+                                <div class="flex flex-col items-center justify-center h-full text-center space-y-4 py-12" id="blueprint-placeholder">
+                                    <div class="w-16 h-16 rounded-full bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-500">
+                                        <i class="fa-solid fa-clipboard-user text-2xl"></i>
+                                    </div>
+                                    <div class="max-w-sm">
+                                        <h4 class="font-bold text-slate-800 text-base">Menunggu Input Profil</h4>
+                                        <p class="text-xs text-slate-500 mt-1 leading-relaxed">Silakan isi formulir di sebelah kiri untuk menghasilkan cetak biru kepribadian, karier mandiri, serta pencocokan kurikulum yang paling tepat.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Blueprint loading animation -->
+                                <div class="hidden flex flex-col items-center justify-center h-full text-center space-y-4 py-12" id="blueprint-loading">
+                                    <div class="relative w-16 h-16">
+                                        <div class="absolute inset-0 rounded-full border-4 border-slate-200"></div>
+                                        <div class="absolute inset-0 rounded-full border-4 border-brand-500 border-t-transparent animate-spin"></div>
+                                    </div>
+                                    <div class="max-w-xs">
+                                        <h4 class="font-bold text-slate-800 text-sm">Menghubungi AI Pola Insan...</h4>
+                                        <p class="text-xs text-slate-500 mt-1">Kami sedang menyusun rencana aksi personal Anda berdasarkan algoritma kemandirian.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Dynamic output container -->
+                                <div class="hidden markdown-body space-y-6" id="blueprint-text-container"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: AI Chatbot Assistant -->
+                <div id="tab-chat" class="hidden p-0 flex flex-col h-[550px] relative">
+                    <!-- Chat Header -->
+                    <div class="bg-slate-50 px-6 py-4 border-b border-slate-200/80 flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-brand-500 flex items-center justify-center text-white relative shadow-md">
+                                <i class="fa-solid fa-robot"></i>
+                                <span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 border-2 border-white rounded-full"></span>
+                            </div>
+                            <div>
+                                <span class="font-bold text-sm text-slate-800 block">Mentor Asisten AI Pola Insan</span>
+                                <span class="text-xs text-slate-500 block">Aktif 24 Jam • Ditenagai oleh Gemini AI</span>
+                            </div>
+                        </div>
+                        <button onclick="clearChatHistory()" class="text-xs font-bold text-slate-500 hover:text-red-500 transition flex items-center space-x-1.5">
+                            <i class="fa-regular fa-trash-can"></i>
+                            <span>Hapus Riwayat</span>
+                        </button>
+                    </div>
+
+                    <!-- Chat Messages Area -->
+                    <div class="flex-1 overflow-y-auto p-6 space-y-4 bg-slate-50/50" id="chat-messages">
+                        <!-- Default greeting from bot -->
+                        <div class="flex items-start space-x-3 max-w-[85%]">
+                            <div class="w-8 h-8 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-robot text-sm"></i>
+                            </div>
+                            <div class="bg-white px-4 py-3 rounded-2xl rounded-tl-none border border-slate-100 shadow-sm text-sm text-slate-700 leading-relaxed">
+                                <p class="font-semibold text-brand-600 mb-1 text-xs">Asisten Pola Insan Mandiri</p>
+                                Halo! Saya adalah AI Mentor dari Yayasan Pola Insan Mandiri. Saya siap membantu Anda berkonsultasi mengenai rencana karier, pengembangan disiplin diri, wirausaha, serta memberikan info detail terkait kurikulum belajar, donasi, dan program sosial yayasan kami. 
+                                <br><br>Ada hal menarik apa yang ingin Anda diskusikan hari ini?
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Input Bar -->
+                    <div class="p-4 border-t border-slate-200 bg-white">
+                        <form id="chat-form" onsubmit="sendChatMessage(event)" class="flex items-center space-x-2">
+                            <input type="text" id="chat-input" placeholder="Tanyakan seputar program yayasan, pengembangan karakter, atau tips wirausaha..." autocomplete="off" class="flex-1 px-4 py-3.5 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 bg-white transition outline-none text-sm">
+                            <button type="submit" class="p-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white transition shadow-md shadow-brand-500/20 flex items-center justify-center aspect-square shrink-0">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Trust Section (Yayasan Profile) -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Column: Story & Vision -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-brand-600 font-bold text-sm tracking-wider uppercase">Tentang Yayasan</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">Mencetak Generasi Berkarakter, Cakap, dan Berdikari</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Didirikan atas inisiatif kepedulian terhadap kesenjangan akses pendidikan dan pengembangan potensi manusia, **Yayasan Pola Insan Mandiri (YAPIM) Klaten** bertekad mengubah pola pikir masyarakat marginal dari sekadar "bertahan hidup" menjadi "mandiri dan mandraguna" di daerah Klaten dan sekitarnya.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Kami mengintegrasikan nilai-nilai spiritual, integritas personal, penguasaan kecakapan teknologi modern, serta keterampilan berwirausaha secara terarah. Dukungan teknologi kecerdasan buatan (AI) membantu kami melakukan pendampingan kurikulum yang sangat personal bagi setiap anak didik kami di wilayah Jawa Tengah.
+                    </p>
+                    
+                    <!-- Vision Missions list -->
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-indigo-100 text-brand-600 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Kurikulum Integratif Modern</h4>
+                                <p class="text-xs text-slate-500">Pendidikan karakter, hard skills vokasi, dan literasi digital yang relevan dengan kebutuhan industri saat ini.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-indigo-100 text-brand-600 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Pendampingan Berkelanjutan</h4>
+                                <p class="text-xs text-slate-500">Kami tidak melepaskan peserta setelah lulus, melainkan membina hingga benar-benar mandiri secara ekonomi dan sosial.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Visual Infographics and Video Teaser -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="p-8 rounded-3xl bg-indigo-900 text-white space-y-6 relative overflow-hidden shadow-xl">
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-brand-500 rounded-full opacity-20 filter blur-xl"></div>
+                        <h3 class="text-xl font-bold tracking-tight">Kemandirian Membutuhkan Kolaborasi</h3>
+                        <p class="text-indigo-200 text-sm leading-relaxed">
+                            Pola pembinaan kami mengedepankan pendekatan keluarga yang suportif. Dengan menjadi bagian dari program kami, Anda berkontribusi memutus rantai kemiskinan dengan cara mendidik, melatih, dan menyalurkan potensi terbaik bangsa.
+                        </p>
+                        
+                        <!-- Testimonial Quote -->
+                        <div class="border-t border-white/10 pt-6 mt-6">
+                            <p class="text-sm italic text-indigo-100">
+                                "Sebelum bergabung dengan inkubator digital Yayasan Pola Insan Mandiri, saya hanya seorang serabutan. Melalui bimbingan AI mentor dan kelas intensif, kini saya memiliki usaha mikro agensi jasa desain."
+                            </p>
+                            <div class="flex items-center space-x-3 mt-4">
+                                <div class="w-10 h-10 rounded-full bg-indigo-800 border border-white/20 flex items-center justify-center font-bold text-white text-xs">
+                                    AM
+                                </div>
+                                <div>
+                                    <span class="block text-xs font-bold text-white">Ahmad Maulana</span>
+                                    <span class="block text-[10px] text-indigo-300">Alumni Angkatan XII - Pebisnis Kreatif</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Portal & Action Hub -->
+    <section id="donasi-section" class="py-20 bg-gradient-to-tr from-brand-900 to-indigo-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-800/40 via-brand-950/20 to-transparent"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Area: Story / Call for Help -->
+                <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+                    <span class="px-3 py-1.5 rounded-full bg-white/10 text-brand-300 font-bold text-xs uppercase tracking-wider">Aksi Kepedulian Nyata</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Salurkan Berkat, Ciptakan Kemandirian Abadi</h2>
+                    <p class="text-indigo-200 leading-relaxed text-sm sm:text-base">
+                        Setiap rupiah yang Anda donasikan digunakan sepenuhnya untuk menyubsidi laptop siswa prasejahtera, modal inkubasi wirausaha mandiri, penyediaan infrastruktur belajar, dan sistem AI pembimbing karakter secara gratis bagi mereka yang membutuhkan.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0 pt-4">
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-center">
+                            <span class="block text-2xl font-bold text-secondary-400 mb-1">Rp 150rb</span>
+                            <span class="text-xs text-indigo-300">Subsidi Buku & Akses AI Bulanan</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/10 text-center">
+                            <span class="block text-2xl font-bold text-brand-400 mb-1">Rp 500rb</span>
+                            <span class="text-xs text-indigo-300">Subsidi Kelas Coding & Sertifikasi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Area: Interactive Mock Donation Form -->
+                <div class="lg:col-span-6">
+                    <div class="bg-white text-slate-800 p-6 sm:p-8 rounded-3xl shadow-2xl space-y-6">
+                        <h3 class="text-xl font-bold text-slate-900 flex items-center space-x-2">
+                            <i class="fa-solid fa-heart text-secondary-500"></i>
+                            <span>Formulir Donasi Digital</span>
+                        </h3>
+                        
+                        <div id="donation-notification" class="hidden p-4 rounded-xl text-xs font-medium"></div>
+
+                        <form id="donation-form" onsubmit="processDonation(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-2">Nama Pengirim</label>
+                                <input type="text" id="donatur-nama" placeholder="Tulis nama Anda / Hamba Allah" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 bg-white transition outline-none text-sm">
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-2">Nominal Donasi (IDR)</label>
+                                    <input type="number" id="donatur-nominal" placeholder="Minimal Rp 20.000" min="20000" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 bg-white transition outline-none text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-2">Metode Pembayaran</label>
+                                    <select id="donatur-metode" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 bg-white transition outline-none text-sm">
+                                        <option value="QRIS (Gopay/OVO/ShopeePay)">QRIS (Gopay/OVO/Dana)</option>
+                                        <option value="Transfer Mandiri">Transfer Bank Mandiri</option>
+                                        <option value="Transfer BCA">Transfer Bank BCA</option>
+                                        <option value="Transfer BNI">Transfer Bank BNI</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-2">Pesan & Doa Harapan (Opsional)</label>
+                                <textarea id="donatur-pesan" rows="2" placeholder="Semoga berkah untuk adek-adek asuh..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 bg-white transition outline-none text-sm resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-secondary-500 to-pink-600 hover:from-secondary-600 hover:to-pink-700 text-white font-bold transition shadow-lg shadow-secondary-500/20 flex items-center justify-center space-x-2">
+                                <i class="fa-solid fa-shield-heart"></i>
+                                <span>Kirim Donasi & Amankan Transaksi</span>
+                            </button>
+                        </form>
+                        
+                        <div class="text-[11px] text-slate-400 text-center flex items-center justify-center space-x-2 border-t border-slate-100 pt-4">
+                            <i class="fa-solid fa-lock"></i>
+                            <span>Sistem donasi terlindungi enkripsi 256-bit SSL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-slate-900 text-slate-400 pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- Col 1: Foundation Pitch with Inline SVG Logo -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <!-- Identical Inline SVG in footer with bright background styling for contrast -->
+                        <div class="bg-white/10 p-1.5 rounded-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 250" class="h-10 w-auto drop-shadow-md" id="ypim-svg-logo-footer">
+                                <path d="M 110 15 L 195 62 L 110 110 L 25 62 Z" fill="url(#logoTop)" />
+                                <path d="M 110 38 L 152 62 L 110 86 L 68 62 Z" fill="#ffffff" />
+                                <path d="M 110 47 L 126 57 L 110 67 L 94 57 Z" fill="#dc2626" />
+                                <path d="M 25 74 L 105 119 L 105 158 L 25 113 Z" fill="url(#logoLeftGrad)" />
+                                <path d="M 25 125 L 105 170 L 105 209 L 25 164 Z" fill="url(#logoLeftGrad)" />
+                                <path d="M 115 119 L 195 74 L 195 113 L 115 158 Z" fill="url(#logoRightGrad)" />
+                                <path d="M 115 170 L 195 125 L 195 164 L 115 209 Z" fill="url(#logoRightGrad)" />
+                                <rect x="10" y="215" width="200" height="30" rx="15" fill="url(#pillGrad)" />
+                                <text x="110" y="235" fill="#ffffff" font-family="'Inter', sans-serif" font-weight="bold" font-size="12" text-anchor="middle" letter-spacing="0.4">Pola Insan Mandiri</text>
+                            </svg>
+                        </div>
+                        <span class="font-extrabold text-lg text-white tracking-tight">YAPIM Klaten</span>
+                    </div>
+                    <p class="text-xs leading-relaxed">
+                        Kami adalah yayasan nirlaba pemberdayaan sosial, karakter, dan teknologi mandiri di Klaten yang berfokus melahirkan generasi berdaya saing global melalui perpaduan budi pekerti luhur dan teknologi kecerdasan buatan.
+                    </p>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <a href="https://wa.me/628562557235" target="_blank" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-emerald-600 text-white flex items-center justify-center transition" title="WhatsApp Kami"><i class="fa-brands fa-whatsapp text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-white flex items-center justify-center transition"><i class="fa-brands fa-instagram text-sm"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-white flex items-center justify-center transition"><i class="fa-brands fa-youtube text-sm"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Useful links -->
+                <div>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Navigasi Cepat</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li><a href="#beranda" class="hover:text-white transition">Beranda Utama</a></li>
+                        <li><a href="#program" class="hover:text-white transition">Program Pembinaan</a></li>
+                        <li><a href="#ai-center" class="hover:text-white transition">Konsultasi Mentor AI</a></li>
+                        <li><a href="#tentang" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#donasi-section" class="hover:text-white transition">Program Donasi Peduli</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Programs detail -->
+                <div>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Pilar Belajar</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li><a href="#program" class="hover:text-white transition">Pola Karakter Mulia</a></li>
+                        <li><a href="#program" class="hover:text-white transition">Vokasi Coding & Desain</a></li>
+                        <li><a href="#program" class="hover:text-white transition">Pemasaran Digital & E-Commerce</a></li>
+                        <li><a href="#program" class="hover:text-white transition">Inkubator Bisnis Rintisan</a></li>
+                        <li><a href="#program" class="hover:text-white transition">Pertanian Mandiri Presisi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact address -->
+                <div>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Sekretariat Utama</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li class="flex items-start space-x-2">
+                            <i class="fa-solid fa-map-marker-alt text-brand-500 shrink-0 mt-0.5"></i>
+                            <span>Jl. Sugriyopranoto, gang Nakulo no 11, Sumbeanom, Karanganom, Klaten Utara, 57436</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-phone text-brand-500 shrink-0"></i>
+                            <a href="tel:+628562557235" class="hover:text-white transition">+62 856-2557-235</a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-envelope text-brand-500 shrink-0"></i>
+                            <a href="mailto:yapim.klaten@gmail.com" class="hover:text-white transition">yapim.klaten@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright footer -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 space-y-4 sm:space-y-0">
+                <span>&copy; 2026 Yayasan Pola Insan Mandiri (YAPIM) Klaten. Hak Cipta Dilindungi.</span>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="hover:text-slate-400 transition">Syarat Ketentuan</a>
+                    <a href="#" class="hover:text-slate-400 transition">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
+        <!-- Secure API Key Configuration Button (Essential for Client-Side Deployment) -->
+        <button onclick="toggleApiModal()" class="bg-indigo-600 hover:bg-indigo-700 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition duration-300 hover:scale-110 self-end group" title="Atur API Key Gemini">
+            <i class="fa-solid fa-gear text-xl"></i>
+            <span class="max-w-0 overflow-hidden group-hover:max-w-xs group-hover:ml-2 transition-all duration-300 ease-out text-xs font-bold whitespace-nowrap">Koneksi AI</span>
+        </button>
+
+        <!-- Floating WhatsApp Contact Button -->
+        <a href="https://wa.me/628562557235" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition duration-300 hover:scale-110 group" title="Hubungi Kami via WhatsApp">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            <span class="max-w-0 overflow-hidden group-hover:max-w-xs group-hover:ml-2 transition-all duration-300 ease-out text-sm font-bold whitespace-nowrap">Hubungi Kami</span>
+        </a>
+    </div>
+
+    <!-- Secure API Settings Modal -->
+    <div id="api-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl border border-slate-100 relative">
+            <button onclick="toggleApiModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-600">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div class="space-y-4">
+                <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center">
+                    <i class="fa-solid fa-key text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-950 text-lg">Konfigurasi Kecerdasan Buatan</h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Website ini menggunakan Google Gemini AI secara langsung untuk menjaga transparansi dan memangkas biaya server bulanan yayasan.</p>
+                </div>
+                <div class="p-3 bg-amber-50 border border-amber-200 text-amber-800 rounded-xl text-xs space-y-1">
+                    <p class="font-bold"><i class="fa-solid fa-shield-halved"></i> 100% Aman & Terenkripsi Lokal</p>
+                    <p>API Key Anda disimpan secara privat di perangkat Anda sendiri, tidak pernah dikirimkan atau direkam oleh server eksternal mana pun.</p>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Gemini API Key Anda</label>
+                    <input type="password" id="input-api-key" placeholder="AIzaSy..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 bg-white transition outline-none text-sm">
+                    <p class="text-[10px] text-slate-400 mt-1.5 leading-relaxed">Belum punya kunci? Anda bisa mendapatkan API Key gratis di <a href="https://aistudio.google.com/" target="_blank" class="text-brand-600 hover:underline font-semibold">Google AI Studio</a>.</p>
+                </div>
+                <div class="flex space-x-3 pt-2">
+                    <button onclick="saveApiKey()" class="flex-1 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold text-sm transition shadow-lg shadow-indigo-600/20">Simpan Koneksi</button>
+                    <button onclick="clearApiKey()" class="px-4 py-3 bg-slate-100 hover:bg-slate-200 text-slate-600 rounded-xl font-bold text-sm transition">Hapus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript Logic -->
+    <script>
+        // LocalStorage Key Name
+        const STORAGE_KEY = "yapim_gemini_api_key";
+
+        // Global chat memory to support natural multi-turn-like flow
+        let chatHistory = [];
+
+        // Simple Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.className = 'fa-solid fa-bars text-xl text-slate-700';
+            } else {
+                menuIcon.className = 'fa-solid fa-xmark text-xl text-slate-700';
+            }
+        });
+
+        // Close mobile menu on click links
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.className = 'fa-solid fa-bars text-xl text-slate-700';
+            });
+        });
+
+        // API Modal Toggles
+        function toggleApiModal() {
+            const modal = document.getElementById('api-modal');
+            const input = document.getElementById('input-api-key');
+            
+            modal.classList.toggle('hidden');
+            if (!modal.classList.contains('hidden')) {
+                input.value = localStorage.getItem(STORAGE_KEY) || "";
+            }
+        }
+
+        function saveApiKey() {
+            const val = document.getElementById('input-api-key').value.trim();
+            if (val) {
+                localStorage.setItem(STORAGE_KEY, val);
+                alert("Koneksi Gemini AI tersambung dengan sukses!");
+                toggleApiModal();
+            } else {
+                alert("Harap masukkan API Key yang valid.");
+            }
+        }
+
+        function clearApiKey() {
+            localStorage.removeItem(STORAGE_KEY);
+            document.getElementById('input-api-key').value = "";
+            alert("Koneksi terputus. API Key telah dihapus dari perangkat ini.");
+            toggleApiModal();
+        }
+
+        // Retrieve Active API Key & URL
+        function getApiConfig() {
+            const savedKey = localStorage.getItem(STORAGE_KEY);
+            if (!savedKey) return null;
+            return {
+                key: savedKey,
+                url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${savedKey}`
+            };
+        }
+
+        // Tab Switching Logic
+        function switchTab(tabId) {
+            const tabs = ['tab-blueprint', 'tab-chat'];
+            const buttons = {
+                'tab-blueprint': 'btn-tab-blueprint',
+                'tab-chat': 'btn-tab-chat'
+            };
+
+            tabs.forEach(t => {
+                const element = document.getElementById(t);
+                const button = document.getElementById(buttons[t]);
+                if (t === tabId) {
+                    element.classList.remove('hidden');
+                    button.classList.add('border-brand-600', 'text-brand-600');
+                    button.classList.remove('border-transparent', 'text-slate-500');
+                } else {
+                    element.classList.add('hidden');
+                    button.classList.remove('border-brand-600', 'text-brand-600');
+                    button.classList.add('border-transparent', 'text-slate-500');
+                }
+            });
+        }
+
+        // Exponential Backoff Fetch Helper
+        async function fetchWithRetry(url, options, retries = 3, delay = 1000) {
+            try {
+                const response = await fetch(url, options);
+                if (!response.ok) {
+                    if (response.status === 429 && retries > 0) {
+                        await new Promise(resolve => setTimeout(resolve, delay));
+                        return fetchWithRetry(url, options, retries - 1, delay * 2);
+                    }
+                    throw new Error(`HTTP Error! Status: ${response.status}`);
+                }
+                return response;
+            } catch (error) {
+                if (retries > 0) {
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                    return fetchWithRetry(url, options, retries - 1, delay * 2);
+                }
+                throw error;
+            }
+        }
+
+        // Check if AI is configured
+        function verifyAiConfig() {
+            const config = getApiConfig();
+            if (!config) {
+                toggleApiModal();
+                alert("Untuk menggunakan fitur asisten pintar bertenaga AI, mohon masukkan API Key Gemini Anda di panel pengaturan yang muncul terlebih dahulu.");
+                return false;
+            }
+            return config;
+        }
+
+        // AI Blueprint Generation Trigger
+        async function generateBlueprint(event) {
+            event.preventDefault();
+
+            const config = verifyAiConfig();
+            if (!config) return;
+
+            const nama = document.getElementById('bp-nama').value;
+            const usia = document.getElementById('bp-usia').value;
+            const status = document.getElementById('bp-status').value;
+            const minat = document.getElementById('bp-minat').value;
+            const tantangan = document.getElementById('bp-tantangan').value;
+
+            const placeholder = document.getElementById('blueprint-placeholder');
+            const loading = document.getElementById('blueprint-loading');
+            const container = document.getElementById('blueprint-text-container');
+
+            placeholder.classList.add('hidden');
+            container.classList.add('hidden');
+            loading.classList.remove('hidden');
+
+            const systemPrompt = `Anda adalah AI Konsultan Kemandirian & Karakter Unggul dari Yayasan Pola Insan Mandiri (YAPIM) Klaten. Tugas Anda adalah menganalisis profil pengguna dan menciptakan "Cetak Biru Kemandirian Diri" yang komprehensif, inspiratif, dan taktis. 
+
+Struktur output Anda HARUS rapi dan terstruktur dalam bahasa Indonesia yang memotivasi (Gunakan format HTML sederhana tanpa tag \`<html>\`, gunakan tag \`<h3>\`, \`<strong>\`, \`<ul>\`, \`<p>\`, dan badge bergaya):
+1. **Analisis Profil Insan**: Analisis singkat tentang potensi berdasarkan usianya (${usia} tahun) dan minatnya (${minat}) yang disesuaikan dengan peluang lokal di Klaten jika relevan.
+2. **Pola Karakter Unggul**: Rekomendasi perbaikan pola pikir (mindset) dan disiplin spiritual/emosional untuk mengatasi tantangannya (${tantangan}).
+3. **Peta Jalan Karier & Vokasi Mandiri**: Langkah demi langkah (Step 1, 2, 3) yang terarah bagi status mereka (${status}) di bidang minat mereka.
+4. **Pencocokan Kurikulum Yayasan**: Sebutkan rekomendasi program YAPIM Klaten yang paling cocok (misal: Vokasi Digital, Karakter Mulia, atau Inkubasi Wirausaha) dan mengapa itu dapat membantunya secara instan.
+
+Berikan jawaban yang profesional, mendalam, dan kaya substansi.`;
+
+            const promptText = `Nama lengkap saya ${nama}. Saya berusia ${usia} tahun dengan status ${status}. Saya sangat tertarik dengan bidang ${minat}. Namun, tantangan terbesar saya saat ini adalah: "${tantangan}". Tolong buatkan Cetak Biru Pengembangan Diri komprehensif untuk saya agar saya bisa segera mandiri.`;
+
+            const payload = {
+                contents: [{ parts: [{ text: promptText }] }],
+                systemInstruction: { parts: [{ text: systemPrompt }] }
+            };
+
+            try {
+                const response = await fetchWithRetry(config.url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const data = await response.json();
+                const aiResponse = data.candidates?.[0]?.content?.parts?.[0]?.text;
+
+                if (aiResponse) {
+                    container.innerHTML = formatMarkdownToHTML(aiResponse);
+                    loading.classList.add('hidden');
+                    container.classList.remove('hidden');
+                } else {
+                    throw new Error("Format respons API tidak sesuai");
+                }
+            } catch (err) {
+                loading.classList.add('hidden');
+                placeholder.classList.remove('hidden');
+                alert("Mohon maaf, koneksi API Key tidak valid atau terputus. Silakan periksa kembali konfigurasi API Key Anda.");
+            }
+        }
+
+        // Send Chat Message Logic
+        async function sendChatMessage(event) {
+            event.preventDefault();
+
+            const config = verifyAiConfig();
+            if (!config) return;
+
+            const inputEl = document.getElementById('chat-input');
+            const userText = inputEl.value.trim();
+            if (!userText) return;
+
+            inputEl.value = '';
+
+            const chatMessagesContainer = document.getElementById('chat-messages');
+
+            // Render User Message in UI
+            const userMsgHtml = `
+                <div class="flex items-start justify-end space-x-3 ml-auto max-w-[85%]">
+                    <div class="bg-brand-600 text-white px-4 py-3 rounded-2xl rounded-tr-none shadow-sm text-sm leading-relaxed">
+                        <p class="font-semibold text-brand-100 mb-1 text-xs text-right">Anda</p>
+                        ${escapeHTML(userText)}
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-user text-sm"></i>
+                    </div>
+                </div>
+            `;
+            chatMessagesContainer.insertAdjacentHTML('beforeend', userMsgHtml);
+            scrollToBottom(chatMessagesContainer);
+
+            // Add typing indicator element
+            const typingId = "ai-typing-indicator";
+            const typingHtml = `
+                <div id="${typingId}" class="flex items-start space-x-3 max-w-[85%]">
+                    <div class="w-8 h-8 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-robot text-sm"></i>
+                    </div>
+                    <div class="bg-white px-4 py-3 rounded-2xl rounded-tl-none border border-slate-100 shadow-sm text-sm text-slate-500 flex items-center space-x-2">
+                        <span>AI sedang memikirkan solusi terbaik</span>
+                        <div class="flex space-x-1">
+                            <span class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></span>
+                            <span class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></span>
+                            <span class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style="animation-delay: 0.3s"></span>
+                        </div>
+                    </div>
+                </div>
+            `;
+            chatMessagesContainer.insertAdjacentHTML('beforeend', typingHtml);
+            scrollToBottom(chatMessagesContainer);
+
+            const systemPrompt = `Anda adalah Mentor Pintar dan Konsultan Kehidupan yang ramah dari Yayasan Pola Insan Mandiri (YAPIM) Klaten.
+Aturan khusus Anda:
+1. Jawab selalu dalam bahasa Indonesia yang bersahabat, bijak, memberikan arahan solusi, dan selalu menghubungkan pentingnya pola pikir berdikari (mandiri).
+2. Jika ditanya seputar yayasan, sebutkan bahwa kami berbasis di Klaten dengan Sekretariat Utama di Jl. Sugriyopranoto, gang Nakulo no 11, Sumbeanom, Karanganom, Klaten Utara, 57436. Surel kami adalah yapim.klaten@gmail.com.
+3. Kami memiliki 3 program utama: Pola Karakter Mulia, Vokasi & Inkubator Digital, serta Inkubasi Wirausaha Mandiri. Kami menerima donasi untuk kemandirian warga prasejahtera khususnya di wilayah Klaten dan sekitarnya. Jika pengguna bertanya tentang kontak, butuh konfirmasi transfer donasi, atau ingin berkonsultasi langsung, arahkan mereka ke nomor telepon resmi +62 856-2557-235 (WhatsApp tersedia) atau surel yapim.klaten@gmail.com.
+4. Berikan nasihat praktis, inspiratif, dan solutif. Jangan memberikan jawaban yang terlalu singkat.`;
+
+            const payload = {
+                contents: [{ parts: [{ text: userText }] }],
+                systemInstruction: { parts: [{ text: systemPrompt }] }
+            };
+
+            try {
+                const response = await fetchWithRetry(config.url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const data = await response.json();
+                const aiResponse = data.candidates?.[0]?.content?.parts?.[0]?.text;
+
+                const typingIndicator = document.getElementById(typingId);
+                if (typingIndicator) typingIndicator.remove();
+
+                if (aiResponse) {
+                    const aiMsgHtml = `
+                        <div class="flex items-start space-x-3 max-w-[85%]">
+                            <div class="w-8 h-8 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-robot text-sm"></i>
+                            </div>
+                            <div class="bg-white px-4 py-3 rounded-2xl rounded-tl-none border border-slate-100 shadow-sm text-sm text-slate-700 leading-relaxed">
+                                <p class="font-semibold text-brand-600 mb-1 text-xs">Asisten Pola Insan Mandiri</p>
+                                ${formatMarkdownToHTML(aiResponse)}
+                            </div>
+                        </div>
+                    `;
+                    chatMessagesContainer.insertAdjacentHTML('beforeend', aiMsgHtml);
+                    scrollToBottom(chatMessagesContainer);
+                } else {
+                    throw new Error("Respon tidak valid");
+                }
+            } catch (err) {
+                const typingIndicator = document.getElementById(typingId);
+                if (typingIndicator) typingIndicator.remove();
+
+                const errMsgHtml = `
+                    <div class="flex items-start space-x-3 max-w-[85%]">
+                        <div class="w-8 h-8 rounded-full bg-red-100 text-red-500 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-circle-exclamation text-sm"></i>
+                        </div>
+                        <div class="bg-red-50 px-4 py-3 rounded-2xl rounded-tl-none border border-red-100 shadow-sm text-sm text-red-700">
+                            Terjadi gangguan koneksi. Harap periksa apakah API Key Gemini Anda sudah benar.
+                        </div>
+                    </div>
+                `;
+                chatMessagesContainer.insertAdjacentHTML('beforeend', errMsgHtml);
+                scrollToBottom(chatMessagesContainer);
+            }
+        }
+
+        // Clear Chat History Logic
+        function clearChatHistory() {
+            const chatMessagesContainer = document.getElementById('chat-messages');
+            chatMessagesContainer.innerHTML = `
+                <div class="flex items-start space-x-3 max-w-[85%]">
+                    <div class="w-8 h-8 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-robot text-sm"></i>
+                    </div>
+                    <div class="bg-white px-4 py-3 rounded-2xl rounded-tl-none border border-slate-100 shadow-sm text-sm text-slate-700 leading-relaxed">
+                        <p class="font-semibold text-brand-600 mb-1 text-xs">Asisten Pola Insan Mandiri</p>
+                        Riwayat chat telah dihapus. Ada hal baru yang ingin Anda diskusikan mengenai program kemandirian diri hari ini?
+                    </div>
+                </div>
+            `;
+        }
+
+        // Helper to format Markdown-like structure returned by Gemini to safe HTML
+        function formatMarkdownToHTML(text) {
+            let formatted = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            formatted = formatted.replace(/\*(.*?)\*/g, '<em>$1</em>');
+            formatted = formatted.replace(/^### (.*?)$/gm, '<h4 class="text-md font-bold text-slate-900 mt-4 mb-2">$1</h4>');
+            formatted = formatted.replace(/^## (.*?)$/gm, '<h3 class="text-lg font-black text-slate-900 mt-5 mb-3 border-b pb-1">$1</h3>');
+            formatted = formatted.replace(/^\- (.*?)$/gm, '<li class="ml-4 list-disc pl-1 text-slate-600 text-sm">$1</li>');
+            formatted = formatted.replace(/^\* (.*?)$/gm, '<li class="ml-4 list-disc pl-1 text-slate-600 text-sm">$1</li>');
+            formatted = formatted.replace(/\n/g, '<br>');
+            return formatted;
+        }
+
+        // Prevent cross-site scripting (XSS) in user submissions
+        function escapeHTML(str) {
+            return str.replace(/[&<>'"]/g, 
+                tag => ({
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    "'": '&#39;',
+                    '"': '&quot;'
+                }[tag] || tag)
+            );
+        }
+
+        // Smooth scroll to bottom
+        function scrollToBottom(container) {
+            setTimeout(() => {
+                container.scrollTo({
+                    top: container.scrollHeight,
+                    behavior: 'smooth'
+                });
+            }, 50);
+        }
+
+        // Copy generated blueprint output to clipboard (fallback implementation)
+        function copyBlueprintText() {
+            const textContainer = document.getElementById('blueprint-text-container');
+            if (textContainer.classList.contains('hidden')) {
+                alert("Tidak ada hasil cetak biru yang bisa disalin.");
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNode(textContainer);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+
+            try {
+                document.execCommand('copy');
+                alert("Sukses! Hasil cetak biru Anda telah disalin ke papan klip.");
+            } catch (err) {
+                alert("Gagal menyalin otomatis. Silakan blokir teks lalu salin secara manual.");
+            }
+            window.getSelection().removeAllRanges();
+        }
+
+        // Mock Donasi Processing
+        function processDonation(event) {
+            event.preventDefault();
+
+            const nama = document.getElementById('donatur-nama').value;
+            const nominal = parseFloat(document.getElementById('donatur-nominal').value);
+            const metode = document.getElementById('donatur-metode').value;
+            const pesan = document.getElementById('donatur-pesan').value;
+            const notification = document.getElementById('donation-notification');
+
+            notification.className = "p-4 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 block mb-4";
+            notification.innerHTML = `
+                <div class="flex items-start space-x-3">
+                    <i class="fa-solid fa-circle-check text-lg text-emerald-600 shrink-0 mt-0.5"></i>
+                    <div>
+                        <p class="font-bold text-sm">Alhamdulillah, Donasi Terinisiasi!</p>
+                        <p class="mt-1">Terima kasih banyak, <strong>${escapeHTML(nama)}</strong>. Kami telah merekam niat baik Anda untuk mendonasikan sejumlah <strong>Rp ${nominal.toLocaleString('id-ID')}</strong> melalui ${metode}.</p>
+                        <p class="mt-2 text-[10px] text-emerald-600/80">Instruksi transfer detail beserta kode unik telah dikirimkan ke kontak Anda, silakan ikuti panduan tersebut untuk validasi otomatis.</p>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('donatur-nama').value = '';
+            document.getElementById('donatur-nominal').value = '';
+            document.getElementById('donatur-pesan').value = '';
+
+            setTimeout(() => {
+                notification.classList.add('hidden');
+            }, 15000);
+        }
+    </script>
+</body>
+</html>
